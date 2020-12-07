@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title><h2>java Script Program to get First And Last Name of the Form</h2></title>
+        <script>
+            function getNames(){
+                var name = document.getElementById("Form");
+                for(var i=0; i<=name.length; i++){
+                    if(name.elements[i].value != "Submit"){
+                        console.log(name.elements[i].value)
+                    }
+                }
+            }
+        </script>
+        <centre><body><h2>Java Program to Get First And Last Name of the Form </h2>
+        <centre><form id = "Form" onsubmit="getNames()">
+            First Name:<input type="text" name="firstName" value="sivanesh">
+            <br><br>
+            Last Name:<input type="text" name="lastName" value="russelraj">
+            <br><br>
+            <input type="submit" value="Submit the form"><br>
+            </form></centre>
+        </body></head>
+</html>
